@@ -11,7 +11,7 @@ The DoorDash Coupon Scraper is a Python script that scrapes DoorDash coupons fro
 1. Clone the repository:
 
 ```bash
-    git clone https://github.com/Prem-ium/coupon-scraper.git
+    git clone https://github.com/Prem-ium/DoorDash-Coupon-Scraper.git
     cd coupon-scraper
 ```
 
