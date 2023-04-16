@@ -2,7 +2,7 @@
 
 ## Introduction
 
-<img src="https://raw.githubusercontent.com/Prem-ium/DoorDash-Coupon-Scraper/main/output-examples/Output.png" width="500">
+<img src="https://raw.githubusercontent.com/Prem-ium/DoorDash-Coupon-Scraper/master/output-examples/Output.png" width="500">
 
 The DoorDash Coupon Scraper is a Python script that scrapes DoorDash coupons from the [Wired Coupons](https://www.wired.com/coupons) website. The coupons are displayed in the console and can also be sent as notifications using Apprise.
 
