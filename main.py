@@ -98,7 +98,7 @@ def main():
 
             if not ALLOW_DUPLICATES:
                 if check_cached_codes(code.text):
-                    print(f"Code {code.text} already exists in cache, skipping")
+                    print(f"Code {code.text} for {title.text} already exists in cache, skipping")
                     continue
 
             if APPRISE_ALERTS:
