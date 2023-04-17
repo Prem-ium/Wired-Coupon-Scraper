@@ -11,6 +11,11 @@ from dotenv                                 import load_dotenv
 
 load_dotenv()
 
+# Whether to use keep_alive.py
+if (os.environ.get("KEEP_ALIVE", "False").lower() == "true"):
+    from keep_alive                                                  import keep_alive
+    keep_alive()
+
 def apprise_init():
     if APPRISE_ALERTS:
         alerts = apprise.Apprise()
@@ -116,4 +121,9 @@ def main():
         except: print('Error retrieving code.')
 
 if __name__ == '__main__':
-    main()
+    if (os.environ.get("KEEP_ALIVE", "False").lower() == "true"):
+        while True:
+            main()
+            sleep(3600)
+    else:
+        main()
