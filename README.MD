@@ -74,6 +74,7 @@ Updated today
 
 | Variable         | Required | Default | Description |
 | ---------------- | -------- | ------- | ----------- |
+| `RETAILERS` | No       | None    | A list of supported retailer coupon pages from Wired.com/coupons |
 | `APPRISE_ALERTS` | No       | None    | A comma-separated list of Apprise notification services. |
 | `ALLOW_DUPLICATES` | No    | `False` | If set to `True`, the script will allow sending duplicate coupons to apprise alerts. |
 | `KEEP_ALIVE` | No    | `False` | If set to `True`, the script will run Flask server to allow Keep Alive. |
