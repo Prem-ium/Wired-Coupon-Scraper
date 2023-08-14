@@ -7,8 +7,7 @@
         <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AA" alt="Github Sponsor"/></a>
 </p>
 
-This sweet, easy-to-use project will help you quickly gather promo codes and coupons being offered when you're ready to place an online order. 
-
+## Environment Variables 
 | Variable         | Required | Default | Description |
 | ---------------- | -------- | ------- | ----------- |
 | `RETAILERS` | No       | None    | A list of supported retailer coupon pages from Wired.com/coupons |
