@@ -117,8 +117,8 @@ def main():
 
         ids = [coupon.get_attribute('href') for coupon in coupons]
 
-        for URL in [f"https://www.wired.com/coupons/{type}{id}" for id in ids]:
-            driver.get(URL)
+        for id in ids:
+            driver.get(id)
             driver.refresh()
             try:
                 print('-' * 25)
