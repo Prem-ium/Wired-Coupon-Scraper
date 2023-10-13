@@ -27,35 +27,45 @@
 ```
 3. Set up the environment variables.
 4. Run the script:
+- No Arguments:
 ``` bash
     python main.py
 ```
-
+- Pass RETAILERS as an argument. Seperate with a comma (```,```)
+``` bash
+    python main.py amazon,doordash
+```
 
 ## Example Output
+Output for running ```python main.py amazon```:
 
 ```Python
-Created new codes.txt file
+---------------------------------------------------------------------------
+Welcome to Wired Coupon Scraper.
 
-10 Walmart coupons were found!
+RETAILERS argument received.
+Gathering coupon codes for: ['amazon']
+--------------------------------------------------
+codes.txt file already exists
+----------------------------------------------------------------------
+Retrieving AMAZON Promo Code Offers...
 
--------------------------
-Summer Sale: 50% Off sitewide + Extra $100 Modloft Discount Code:
-	DESIGNDELIVERED	
-Appended DESIGNDELIVERED to codes.txt
+108 AMAZON Promo Codes/Coupons were found!
 --------------------------------------------------
--------------------------
-$20 off when you spend $50+ with Walmart coupon:
-	TRIPLE20	
-Appended TRIPLE20 to codes.txt
+Take 40% Off select products from Kwfrhix - Amazon Promo Code:
+        40MMS6OP
+https://www.wired.com/coupons/get/94554598?popup=true
+
+Appended Take 40% Off select products from Kwfrhix - Amazon Promo Code: - https://www.wired.com/coupons/get/94554598?popup=true
 --------------------------------------------------
--------------------------
-Walmart Promo Code 2023: 30% off:
-	WOWFRESH	
-Appended WOWFRESH to codes.txt
 --------------------------------------------------
--------------------------
-# Runs through all remaining coupons #
+Enjoy 40% Off select JingLeXin products - Amazon Promo Code:
+        40YPKL1X
+https://www.wired.com/coupons/get/94554602?popup=true
+
+Appended Enjoy 40% Off select JingLeXin products - Amazon Promo Code: - 40YPKL1X - https://www.wired.com/coupons/get/94554602?popup=true
+--------------------------------------------------
+*---Rest of Promo Codes---*
 ```
 
 

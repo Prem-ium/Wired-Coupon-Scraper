@@ -20,11 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import os
-import apprise
-import datetime
-from selenium import webdriver
-from datetime import datetime  
+import os, sys, datetime, traceback, apprise
+
+from selenium                               import webdriver
+from datetime                               import datetime  
 from selenium.webdriver.common.by           import By
 from selenium.webdriver.chrome.options      import Options
 from webdriver_manager.chrome               import ChromeDriverManager
@@ -35,7 +34,21 @@ from dotenv                                 import load_dotenv
 
 load_dotenv()
 
-# Enable keep_alive.py if specified in environment
+print(f"\n{'-' * 75}\nWelcome to Wired Coupon Scraper.\n\nAn automation script to retrieve multiple retailer promotion codes and offers from the Wired website.\nCreated by Prem-ium (https://github.com/Prem-ium)\n\n")
+
+# Retrieve CLI Arguments & Environment Variables
+
+if len(sys.argv) == 2:
+    RETAILERS = sys.argv[1].split(",")
+    print(f"RETAILERS argument received.\nGathering coupon codes for: {RETAILERS}\n{'-' * 50}")
+else:
+    RETAILERS = os.environ.get("RETAILERS", None)
+    if RETAILERS is None:
+        print(f"No arguments or environment variables received for RETAILERS... Defaulting to Walmart.\n{'-' * 50}")
+        RETAILERS = ["walmart"]
+
+ALLOW_DUPLICATES = True if os.environ.get("ALLOW_DUPLICATES", "False").lower() == "true" else False
+
 if os.environ.get("KEEP_ALIVE", "False").lower() == "true":
     from keep_alive import keep_alive
     keep_alive()
@@ -51,14 +64,6 @@ if APPRISE_ALERTS:
     for service in APPRISE_ALERTS:
         alerts.add(service)
 
-# Retrieve environment variables for user preferences
-ALLOW_DUPLICATES = True if os.environ.get("ALLOW_DUPLICATES", "False").lower() == "true" else False
-
-RETAILERS = os.environ.get("RETAILERS", None)
-if RETAILERS is None:
-    print(f"No retailers specified. Please configure your .env to include the names of supported retailers you wish to scrape coupons for. Defaulting to Walmart...")
-    RETAILERS = ["walmart"]
-
 def getDriver():
     chrome_options = Options()
     chrome_options.add_argument('--no-sandbox')
@@ -68,32 +73,26 @@ def getDriver():
             service=Service(ChromeDriverManager(cache_valid_range=30).install()),
             options=chrome_options)
     except Exception as e:
-        try:
-            driver = webdriver.Chrome(options=chrome_options)
-        except Exception as ek:
-            print(f'Attempted to use webdriver manager, but failed.\n{e}\nAttempted to use local webdriver, failed.\n{ek}')
+        driver = webdriver.Chrome(options=chrome_options)
     return driver
 
 def cached_codes_init():
     if not os.path.isfile("codes.txt"):
         open("codes.txt", "a").close()
-        print(f"Created new codes.txt file\n")
+        print(f"Created new codes.txt file")
     else:
-        today = datetime.now().day
         with open("codes.txt", "r") as f:
-            lines = f.readlines()
-            if today == 1 and lines:
+            if datetime.now().day == 1 and f.readlines():
                 print("It's the first day of the month. Clearing the codes.txt file.")
-                with open("codes.txt", "w"):
-                    pass
+                with open("codes.txt", "w"):    pass
             else:
-                print(f"codes.txt file already exists\n")
+                print(f"codes.txt file already exists")
 
 def check_cached_codes(code):
     with open("codes.txt") as f:
         lines = f.readlines()
         lines = [line.strip() for line in lines]
-        if str(code) in lines:
+        if f"{str(code)}\n" in lines:
             print(f"Code {code} found in cache")
             return True
         return False
@@ -108,51 +107,54 @@ def main():
         cached_codes_init()
 
     driver = getDriver()
+
     for type in RETAILERS:
+        print(f'{"-" * 70}\nRetrieving {type.upper()} Promo Code Offers...\n')
         driver.get(f'https://www.wired.com/coupons/{type}')
-        coupons_div = driver.find_element(By.CLASS_NAME, 'coupons-list')
 
-        coupons = coupons_div.find_elements(By.TAG_NAME, 'a')
-        print(f'{len(coupons)} {type} coupons were found!\n\n')
-
+        coupons = (driver.find_element(By.CLASS_NAME, 'coupons-list')).find_elements(By.TAG_NAME, 'a')
         ids = [coupon.get_attribute('href') for coupon in coupons]
 
+        print(f'{len(coupons)} {type.upper()} Promo Codes/Coupons were found!')
+        
         for id in ids:
             driver.get(id)
             driver.refresh()
             try:
-                print('-' * 25)
+                sleep(2)
+                print('-' * 50)
                 title = driver.find_element(By.XPATH, '//*[@id="my-modal"]/div/div/div/h3')
                 code = driver.find_element(By.XPATH, '//*[@id="my-modal"]/div/div/div/div[2]/span')
+                try:
+                    link = (driver.find_element(By.CLASS_NAME, 'modal-clickout__link')).get_attribute("href")
+                except:
+                    link = "(Error retrieving link)"
+                    print(traceback.format_exc())
 
-                if not ALLOW_DUPLICATES:
-                    if check_cached_codes(code.text):
-                        print(f"Code {code.text} for {title.text} already exists in cache, skipping")
-                        continue
+                data = f'{title.text}:\n\t{code.text} \n{link}\n'
+                print(data)
 
                 if APPRISE_ALERTS:
-                    try:
-                        alerts.notify(title=f'{title.text}', body=f'{code.text}')
-                    except Exception as e:          print(e)
+                   alerts.notify(title=f'{type.upper()} Coupon', body=f'{title.text}\n\n{code.text}\n{link}')
 
-                print(f'{title.text}:\n\t{code.text}\t')
+                data = data.replace("\n", " - ")
 
                 if not ALLOW_DUPLICATES:
-                    append_cached_code(code.text)
-
-                try:        print(f'{driver.find_element(By.XPATH, value="/html/body/div[9]/div/div/div/div[1]/div[2]/div/span").text}\n')
-                except:     pass
-
-                
+                    if check_cached_codes(data):
+                        print(f"Code {code.text} for {title.text} already exists in cache, skipping")
+                        continue
+                    else:
+                        append_cached_code(data)
             except:
-                print('Error retrieving code.')
+                print(traceback.format_exc())
             finally:
                 print('-' * 50)
-        print(f'Thanks for using Prem-ium\'s Coupon Scraper!\n(https://www.github.com/Prem-ium)\n\n{"-" * 70}')
+        print(f'{"-" * 70}\nFinished retrieving promotions.\n{"-" * 70}')
 
 if __name__ == '__main__':
-    main()
-
-    while KEEP_ALIVE:
+    if not KEEP_ALIVE:
         main()
-        sleep(3600)
+    else:
+        while True:
+            main()
+            sleep(3600)
