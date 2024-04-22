@@ -7,6 +7,8 @@
         <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AA" alt="Github Sponsor"/></a>
 </p>
 
+**Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) are entitled to special privileges, including exclusive features like Discord Bot support for this project. If you belong to the `Gold` tier sponsorship, please access the private repository for the Python script containing Discord support.
+
 ## Environment Variables 
 | Variable         | Required | Default | Description |
 | ---------------- | -------- | ------- | ----------- |
