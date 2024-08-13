@@ -8,6 +8,8 @@
 </p>
 
 **Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) are entitled to special privileges, including exclusive features like Discord Bot support for this project. If you belong to the `Gold` tier sponsorship, please access the private repository for the Python script containing Discord support.
+![Discord Bot](https://github.com/Prem-ium/Wired-Coupon-Scraper/blob/Prem-ium-patch-1/Assets/DiscordBot.png?raw=true)
+
 
 ## Environment Variables 
 | Variable         | Required | Default | Description |
@@ -69,6 +71,8 @@ Appended Enjoy 40% Off select JingLeXin products - Amazon Promo Code: - 40YPKL1X
 --------------------------------------------------
 *---Rest of Promo Codes---*
 ```
+Output for GitHub sponsors (Discord Bot version):
+![Discord Bot](https://github.com/Prem-ium/Wired-Coupon-Scraper/blob/Prem-ium-patch-1/Assets/DiscordBot-Output.png?raw=true)
 
 
 # Donations
