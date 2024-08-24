@@ -1,5 +1,9 @@
 <h1 align="center">🛒 Wired Coupon Automation Tool 💸 </h1>
 
+<p align="center">
+    <img src="https://github.com/Prem-ium/Wired-Coupon-Scraper/blob/main/Assets/Coupon-Promo-Code-Web-Scraper-Banner.png?raw=true" alt="Wired Coupon Automation Tool Banner"/>
+</p>
+
 <p align="center">Selenium script to retrieve latest Wired Coupons & Promo Codes for various websites such as Walmart, DoorDash, EBay, & more.</p>
 
 <p align="right"> 
