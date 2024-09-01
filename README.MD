@@ -27,6 +27,45 @@ This is a Demo for this project's GitHub Gold Sponsor version (not the public ve
 
 </details>
 
+This is a Demo for the public version:
+<video src="https://github.com/user-attachments/assets/9cc1370e-cf35-4ad3-8901-3e08c474212b" controls="controls" style="max-width: 100%; height: auto;">
+    Your browser does not support video tags.
+</video>
+<details>
+  <summary>Console Output Preview (If the video does not work)</summary>
+Output for running `python main.py amazon`
+
+
+```python
+---------------------------------------------------------------------------
+Welcome to Wired Coupon Scraper.
+
+RETAILERS argument received.
+Gathering coupon codes for: ['amazon']
+--------------------------------------------------
+codes.txt file already exists
+----------------------------------------------------------------------
+Retrieving AMAZON Promo Code Offers...
+
+108 AMAZON Promo Codes/Coupons were found!
+--------------------------------------------------
+Take 40% Off select products from Kwfrhix - Amazon Promo Code:
+        40MMS6OP
+https://www.wired.com/coupons/get/94554598?popup=true
+
+Appended Take 40% Off select products from Kwfrhix - Amazon Promo Code: - https://www.wired.com/coupons/get/94554598?popup=true
+--------------------------------------------------
+--------------------------------------------------
+Enjoy 40% Off select JingLeXin products - Amazon Promo Code:
+        40YPKL1X
+https://www.wired.com/coupons/get/94554602?popup=true
+
+Appended Enjoy 40% Off select JingLeXin products - Amazon Promo Code: - 40YPKL1X - https://www.wired.com/coupons/get/94554602?popup=true
+--------------------------------------------------
+*---Rest of Promo Codes---*
+```
+</details>
+
 
 
 ## Environment Variables 
@@ -56,38 +95,6 @@ This is a Demo for this project's GitHub Gold Sponsor version (not the public ve
 - Pass RETAILERS as an argument. Seperate with a comma (```,```)
 ``` bash
     python main.py amazon,doordash
-```
-
-## Example Output
-Output for running ```python main.py amazon```:
-
-```Python
----------------------------------------------------------------------------
-Welcome to Wired Coupon Scraper.
-
-RETAILERS argument received.
-Gathering coupon codes for: ['amazon']
---------------------------------------------------
-codes.txt file already exists
-----------------------------------------------------------------------
-Retrieving AMAZON Promo Code Offers...
-
-108 AMAZON Promo Codes/Coupons were found!
---------------------------------------------------
-Take 40% Off select products from Kwfrhix - Amazon Promo Code:
-        40MMS6OP
-https://www.wired.com/coupons/get/94554598?popup=true
-
-Appended Take 40% Off select products from Kwfrhix - Amazon Promo Code: - https://www.wired.com/coupons/get/94554598?popup=true
---------------------------------------------------
---------------------------------------------------
-Enjoy 40% Off select JingLeXin products - Amazon Promo Code:
-        40YPKL1X
-https://www.wired.com/coupons/get/94554602?popup=true
-
-Appended Enjoy 40% Off select JingLeXin products - Amazon Promo Code: - 40YPKL1X - https://www.wired.com/coupons/get/94554602?popup=true
---------------------------------------------------
-*---Rest of Promo Codes---*
 ```
 
 # Donations
