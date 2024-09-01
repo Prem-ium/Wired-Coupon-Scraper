@@ -80,13 +80,10 @@ Appended Enjoy 40% Off select JingLeXin products - Amazon Promo Code: - 40YPKL1X
 --------------------------------------------------
 *---Rest of Promo Codes---*
 ```
-Output for GitHub sponsors (Discord Bot version):
-![Discord Bot](https://github.com/Prem-ium/Wired-Coupon-Scraper/blob/main/Assets/DiscordBot-Output.png?raw=true)
-
 
 # Donations
 
-If you appreciate my work and would like to show your support, there are two convenient ways to make a donation:
+If you appreciate my work and would like to show your support, there are two convenient ways to donate:
 
 1. **GitHub Sponsors**
    - [Donate via GitHub Sponsors](https://github.com/sponsors/Prem-ium)
