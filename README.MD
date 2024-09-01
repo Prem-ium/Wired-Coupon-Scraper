@@ -15,9 +15,18 @@
 **Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) are entitled to special privileges, including exclusive features like Discord Bot support for this project. If you belong to the `Gold` tier sponsorship, please access the private repository for the Python script containing Discord support.
 
 This is a Demo for this project's GitHub Gold Sponsor version (not the public version). 
+
 <video src="https://github.com/user-attachments/assets/a09813a5-95ff-4057-a7de-ec23c832b8ee" controls="controls" style="max-width: 100%; height: auto;">
     Your browser does not support video tags.
 </video>
+
+<details>
+  <summary>Image Preview (If the video does not work)</summary>
+
+![Discord Bot Demo](https://github.com/Prem-ium/Wired-Coupon-Scraper/blob/main/Assets/DiscordBot.png?raw=true)
+
+</details>
+
 
 
 ## Environment Variables 
