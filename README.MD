@@ -68,13 +68,16 @@ Appended Enjoy 40% Off select JingLeXin products - Amazon Promo Code: - 40YPKL1X
 
 
 
-## Environment Variables 
-| Variable         | Required | Default | Description |
-| ---------------- | -------- | ------- | ----------- |
-| `RETAILERS` | No       | ["walmart"]    | A list of supported retailer coupon pages from Wired.com/coupons |
-| `APPRISE_ALERTS` | No       | None    | A comma-separated list of Apprise notification services. |
-| `ALLOW_DUPLICATES` | No    | `False` | If set to `True`, the script will allow sending duplicate coupons to apprise alerts. |
-| `KEEP_ALIVE` | No    | `False` | If set to `True`, the script will run Flask server to allow Keep Alive. |
+## Environment Variables
+
+The following environment variables can be configured to customize the behavior of the script. All variables are optional and have default values as shown below:
+
+| Variable           | Default               | Description                                                                                                                                                  |
+|--------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `RETAILERS`        | `["walmart"]`         | A JSON-formatted list of supported retailer coupon pages from Wired.com/coupons. Example: `["walmart", "amazon", "target"]`.                                                                         |
+| `APPRISE_ALERTS`   | None                  | A comma-separated list of Apprise notification service URLs to which coupon alerts will be sent. Example: `discord://webhook_id/webhook_token,mailto://user:pass@smtp.example.com`.                   |
+| `ALLOW_DUPLICATES` | `False`               | If set to `True`, the script will allow sending duplicate coupons to Apprise alerts. Use this option if you want to be notified about the same coupon multiple times.                                |
+| `KEEP_ALIVE`       | `False`               | If set to `True`, the script will run a Flask server to allow Keep-Alive functionality. This can be useful for deployments that need to keep the script running continuously.                        |
 
 ## Installation
 1. Clone the repository:
