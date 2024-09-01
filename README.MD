@@ -14,7 +14,8 @@
 **Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) are entitled to special privileges, including exclusive features like Discord Bot support for this project. If you belong to the `Gold` tier sponsorship, please access the private repository for the Python script containing Discord support.
 
 Demo: 
-https://github.com/user-attachments/assets/a83a495f-821f-471a-b609-3fa5ec62fb4e
+
+https://private-user-images.githubusercontent.com/80719066/363513881-a83a495f-821f-471a-b609-3fa5ec62fb4e.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjUyMTg0OTgsIm5iZiI6MTcyNTIxODE5OCwicGF0aCI6Ii84MDcxOTA2Ni8zNjM1MTM4ODEtYTgzYTQ5NWYtODIxZi00NzFhLWI2MDktM2ZhNWVjNjJmYjRlLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTAxVDE5MTYzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThhMDg1ZDM3ZDQ5MDZjYzE4MmMzOWU2ZDMyMTE0MzlhOWNhMDY0MDM4NmE0NWEyZjU0NWViMjEwZDEwNWY1Y2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.d5fpj_0IFdN--xOSUjkQ9AkdiyPSjiRLQWdqY0m2Ync
 
 
 ## Environment Variables 
