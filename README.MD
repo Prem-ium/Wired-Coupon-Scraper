@@ -11,12 +11,12 @@
         <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AA" alt="Github Sponsor"/></a>
 </p>
 
+## Demo
 **Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) are entitled to special privileges, including exclusive features like Discord Bot support for this project. If you belong to the `Gold` tier sponsorship, please access the private repository for the Python script containing Discord support.
 
-## Demo
-
+This is a Demo for this project's GitHub Gold Sponsor version (not the public version). 
 <video src="https://private-user-images.githubusercontent.com/80719066/363513881-a83a495f-821f-471a-b609-3fa5ec62fb4e.mp4" controls="controls" style="max-width: 100%; height: auto;">
-    Your browser does not support the video tag.
+    Your browser does not support video tags.
 </video>
 
 
