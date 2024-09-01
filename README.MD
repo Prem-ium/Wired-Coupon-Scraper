@@ -12,7 +12,9 @@
 </p>
 
 **Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) are entitled to special privileges, including exclusive features like Discord Bot support for this project. If you belong to the `Gold` tier sponsorship, please access the private repository for the Python script containing Discord support.
-![Discord Bot](https://github.com/Prem-ium/Wired-Coupon-Scraper/blob/main/Assets/DiscordBot.png?raw=true)
+
+Demo: 
+https://github.com/user-attachments/assets/a83a495f-821f-471a-b609-3fa5ec62fb4e
 
 
 ## Environment Variables 
