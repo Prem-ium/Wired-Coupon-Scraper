@@ -100,6 +100,10 @@ The following environment variables can be configured to customize the behavior 
     python main.py amazon,doordash
 ```
 
+## Experiencing Issues? 🛠️
+As of 9/8/2024, I have disabled the `Issues` privilege for the general public. For direct support on any bugs or issues, please consider sponsoring me as a GitHub Sponsor under the `Silver` or `Gold` tier. 
+[![Sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/Prem-ium)
+
 # Donations
 
 If you appreciate my work and would like to show your support, there are two convenient ways to donate:
