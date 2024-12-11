@@ -11,31 +11,43 @@
         <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AA" alt="Github Sponsor"/></a>
 </p>
 
-## Demo
-**Important Notice:** [`Gold Sponsors`](https://github.com/sponsors/Prem-ium) are entitled to special privileges, including exclusive features like Discord Bot support for this project. If you belong to the `Gold` tier sponsorship, please access the private repository for the Python script containing Discord support.
+---
+Here’s the updated version with a download link for users whose browsers don’t support video tags:
 
-This is a Demo for this project's GitHub Gold Sponsor version (not the public version). 
+---
 
-<video src="https://github.com/user-attachments/assets/d369c9a9-7143-4d5f-9105-e6ae137b9c7d" controls="controls" style="max-width: 100%; height: auto;">
-    Your browser does not support video tags.
-https://github.com/user-attachments/assets/d369c9a9-7143-4d5f-9105-e6ae137b9c7d
-</video>
+## Demo  
 
+**Important Notice:** [Gold Sponsors](https://github.com/sponsors/Prem-ium) have access to special privileges, including exclusive features such as Discord Bot support for this project. If you are a `Gold` tier sponsor, you can access the private repository containing the Python script with Discord integration.  
+
+### Gold Sponsor Demo  
+This is a demo of the GitHub Gold Sponsor version of the project (not available in the public version).  
+
+<video src="https://github.com/user-attachments/assets/d369c9a9-7143-4d5f-9105-e6ae137b9c7d" controls style="max-width: 100%; height: auto;">
+    Your browser does not support video tags. 
+    <a href="https://github.com/user-attachments/assets/d369c9a9-7143-4d5f-9105-e6ae137b9c7d" download>Download the video here</a>.
+</video>  
+
+If the video doesn't work, preview the following image:  
 <details>
-  <summary>Image Preview (If the video does not work)</summary>
+  <summary>Image Preview</summary>
 
 ![Discord Bot Demo](https://github.com/Prem-ium/Wired-Coupon-Scraper/blob/main/Assets/DiscordBot.png?raw=true)
 
-</details>
+</details>  
 
-This is a Demo for the public version:
-<video src="https://github.com/user-attachments/assets/9cc1370e-cf35-4ad3-8901-3e08c474212b" controls="controls" style="max-width: 100%; height: auto;">
-    Your browser does not support video tags.
-</video>
+### Public Version Demo  
+This is a demo of the public version of the project.  
+
+<video src="https://github.com/user-attachments/assets/9cc1370e-cf35-4ad3-8901-3e08c474212b" controls style="max-width: 100%; height: auto;">
+    Your browser does not support video tags. 
+    <a href="https://github.com/user-attachments/assets/9cc1370e-cf35-4ad3-8901-3e08c474212b" download>Download the video here</a>.
+</video>  
+
 <details>
-  <summary>Console Output Preview (If the video does not work)</summary>
-Output for running `python main.py amazon`
+  <summary>Console Output Preview</summary>
 
+Output for running `python main.py amazon`
 
 ```python
 ---------------------------------------------------------------------------
@@ -65,10 +77,9 @@ Appended Enjoy 40% Off select JingLeXin products - Amazon Promo Code: - 40YPKL1X
 --------------------------------------------------
 *---Rest of Promo Codes---*
 ```
-</details>
+</details>  
 
-
-
+---
 ## Environment Variables
 
 The following environment variables can be configured to customize the behavior of the script. All variables are optional and have default values as shown below:
@@ -80,6 +91,7 @@ The following environment variables can be configured to customize the behavior 
 | `ALLOW_DUPLICATES` | `False`               | If set to `True`, the script will allow sending duplicate coupons to Apprise alerts. Use this option if you want to be notified about the same coupon multiple times.                                |
 | `KEEP_ALIVE`       | `False`               | If set to `True`, the script will run a Flask server to allow Keep-Alive functionality. This can be useful for deployments that need to keep the script running continuously.                        |
 
+----
 ## Installation
 1. Clone the repository:
 ```bash
@@ -101,10 +113,12 @@ The following environment variables can be configured to customize the behavior 
     python main.py amazon,doordash
 ```
 
+--
 ## Experiencing Issues? 🛠️
 As of 9/8/2024, I have disabled the `Issues` privilege for the general public. For direct support on any bugs or issues, please consider sponsoring me as a GitHub Sponsor under the `Silver` or `Gold` tier. 
 [![Sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/Prem-ium)
 
+---
 # Donations
 
 If you appreciate my work and would like to show your support, there are two convenient ways to donate:
@@ -125,7 +139,7 @@ If you appreciate my work and would like to show your support, there are two con
 Your generous donations will go a long way in helping me cover the expenses associated with developing new features and promoting the project to a wider audience. I extend my heartfelt gratitude to all those who have already contributed. Thank you for your support!
 
 
+---
 ## License
-
 This project uses the [MIT License.](https://choosealicense.com/licenses/mit/)
 
