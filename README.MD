@@ -10,8 +10,8 @@
         <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/><img src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"/><a href="https://github.com/sponsors/Prem-ium" target="_blank">
         <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AA" alt="Github Sponsor, https://github.com/sponsors/Prem-ium"/></a>
 </p>
----
 
+---
 ## Demo  
 
 **Important Notice:** [Gold Sponsors](https://github.com/sponsors/Prem-ium) have access to special privileges, including exclusive features such as Discord Bot support for this project. If you are a `Gold` tier sponsor, you can access the private repository containing the Python script with Discord integration.  
