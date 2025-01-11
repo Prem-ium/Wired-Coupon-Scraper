@@ -134,6 +134,9 @@ If you appreciate my work and would like to show your support, there are two con
 
 Your generous donations will go a long way in helping me cover the expenses associated with developing new features and promoting the project to a wider audience. I extend my heartfelt gratitude to all those who have already contributed. Thank you for your support!
 
+---
+## License
+This project is licensed under the **GNU General Public License v3.0** (GPL-3.0). See the LICENSE file for details.
 
 ---
 ## License
