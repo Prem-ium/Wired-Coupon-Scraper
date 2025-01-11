@@ -138,7 +138,3 @@ Your generous donations will go a long way in helping me cover the expenses asso
 ## License
 This project is licensed under the **GNU General Public License v3.0** (GPL-3.0). See the LICENSE file for details.
 
----
-## License
-This project uses the [MIT License.](https://choosealicense.com/licenses/mit/)
-
