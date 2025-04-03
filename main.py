@@ -14,8 +14,10 @@ load_dotenv()
 
 print("\n" + "="*80)
 print("IMPORTANT NOTICE: As of 4/3/25, Wired has overhauled their coupon website layout, breaking the current implementation.")
-print("A new version is being developed for GitHub Gold sponsors, with a free public release planned at a later date.\n")
-print("You can become a Gold sponsor here:\thttps://github.com/sponsors/Prem-ium \n\nHit enter to run the old script anyway or Ctrl+C to exit.")
+print("A new version **may** be developed for GitHub Gold sponsors, with a free public release planned at a later date.\n")
+print("Become a Gold sponsor here:\thttps://github.com/sponsors/Prem-ium \n\n"
+      "This project is no longer maintained as of 4/3/25.\n"
+      "Press Enter to run the old script anyway or Ctrl+C to exit.")
 print("="*80 + "\n")
 input("Press Enter to continue...")
 

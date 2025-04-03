@@ -17,6 +17,12 @@
 </p>
 
 ---
+🚨 **Project Archived** 🚨  
+
+As of **April 3, 2025**, Wired has updated their website layout, breaking the current implementation of this project. A **new version** utilizing an alternative site may be developed exclusively for **GitHub Gold sponsors** in the future, with a **free public release** planned at a later date.  
+
+For now, this project is **no longer maintained** as of **April 3, 2025**. Thank you for your support! 🚀
+---
 
 ## 🚀 Demo  
 
@@ -38,8 +44,6 @@ Gold Sponsors get access to **exclusive features**, including Discord Bot integr
 
 ### **Public Version Demo**  
 This is a demo of the **public** version of the project.  
-
-🚨 **Note:** As of **4/3/25**, Wired has updated their website layout, breaking the current implementation. A **new version** is being developed for **GitHub Gold sponsors**, with a free public release planned at a later date.  
 
 **Demo Video:**  
 <video src="https://github.com/user-attachments/assets/9cc1370e-cf35-4ad3-8901-3e08c474212b" controls style="max-width: 100%; height: auto;">
