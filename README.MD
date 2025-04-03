@@ -39,6 +39,8 @@ Gold Sponsors get access to **exclusive features**, including Discord Bot integr
 ### **Public Version Demo**  
 This is a demo of the **public** version of the project.  
 
+🚨 **Note:** As of **4/3/25**, Wired has updated their website layout, breaking the current implementation. A **new version** is being developed for **GitHub Gold sponsors**, with a free public release planned at a later date.  
+
 **Demo Video:**  
 <video src="https://github.com/user-attachments/assets/9cc1370e-cf35-4ad3-8901-3e08c474212b" controls style="max-width: 100%; height: auto;">
     Your browser does not support video playback.
@@ -123,7 +125,7 @@ python main.py amazon,doordash
 
 If you appreciate my work and want to support future development, consider donating:  
 
-1. **GitHub Sponsors** *(Preferred – No transaction fees & includes perks!)*
+1. **GitHub Sponsors** *(Preferred – No transaction fees & includes perks!)*  
    - [Donate via GitHub Sponsors](https://github.com/sponsors/Prem-ium)  
    - [![GitHub Sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/Prem-ium)  
 
@@ -141,11 +143,12 @@ Your support helps fund **new features**, **project improvements**, and **better
 
 ## Experiencing Issues? 🛠️  
 
-Issues are disabled for the general public. As of 9/8/2024, only Silver/Gold tier sponsors receive direct support. If you need assistance, please consider sponsoring me:  
+Issues are disabled for the general public. As of **9/8/2024**, only **Silver/Gold tier sponsors** receive direct support. If you need assistance, please consider sponsoring me:  
 
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/Prem-ium)  
+[![Sponsor](https://img.shields.io/badge/sponsor-EA4AAA?style=for-the-badge&logo=GitHub-Sponsors&logoColor=white)](https://github.com/sponsors/Prem-ium)  
 
 ---
+
 ## 📜 License  
 
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**. See the `LICENSE` file for details.

@@ -12,6 +12,13 @@ from dotenv import load_dotenv
 # Setup environment
 load_dotenv()
 
+print("\n" + "="*80)
+print("IMPORTANT NOTICE: As of 4/3/25, Wired has overhauled their coupon website layout, breaking the current implementation.")
+print("A new version is being developed for GitHub Gold sponsors, with a free public release planned at a later date.\n")
+print("You can become a Gold sponsor here:\thttps://github.com/sponsors/Prem-ium \n\nHit enter to run the old script anyway or Ctrl+C to exit.")
+print("="*80 + "\n")
+input("Press Enter to continue...")
+
 # Print Welcome Message
 print(f"\n{'-' * 75}\nWelcome to Wired Coupon Scraper.\n\nAn automation script to retrieve multiple retailer promotion codes and offers from the Wired website.\nCreated by Prem-ium (https://github.com/Prem-ium)\n\n")
 print(f"{'-' * 75}\nWant coupons on the go? Become a Gold Sponsor for exclusive Discord Bot support!\n\nAs a Gold Sponsor, you'll gain:\n- Instant access to coupon notifications anytime, anywhere\n- Be the first to know about new promo codes and offers\n- Priority support for any issues or requests\n\nBecome a Gold Sponsor today and never miss a deal again: [Gold Sponsor page](https://github.com/sponsors/Prem-ium)\n")
